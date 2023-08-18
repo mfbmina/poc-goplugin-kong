@@ -12,8 +12,8 @@ services:
       KONG_PLUGINS: "bundled,hello"
       KONG_DECLARATIVE_CONFIG: /kong/config.yml
       KONG_PLUGINSERVER_NAMES: hello
-      KONG_PLUGINSERVER_KEY_CHECKER_START_CMD: /kong/hello
-      KONG_PLUGINSERVER_KEY_CHECKER_QUERY_CMD: /kong/hello -dump
+      KONG_PLUGINSERVER_HELLO_START_CMD: /kong/hello
+      KONG_PLUGINSERVER_HELLO_QUERY_CMD: /kong/hello -dump
       KONG_PROXY_ACCESS_LOG: /dev/stdout
       KONG_ADMIN_ACCESS_LOG: /dev/stdout
       KONG_PROXY_ERROR_LOG: /dev/stderr

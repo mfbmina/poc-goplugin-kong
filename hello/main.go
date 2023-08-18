@@ -21,13 +21,7 @@ func main() {
 }
 
 type Config struct {
-	Message           string
-	MinAndroidVersion string
-	MinIosVersion     string
-	MsHoustonProtocol string
-	MsHoustonHost     string
-	MsHoustonPath     string
-	MsHoustonFlag     string
+	Message string `json:"message"`
 }
 
 func New() interface{} {

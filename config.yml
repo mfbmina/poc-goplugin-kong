@@ -1,3 +1,5 @@
 pluginserver_names = hello
 
-pluginserver_hello_query_cmd = /kong/hello
+pluginserver_my_plugin_socket = /kong/hello.socket
+pluginserver_my_plugin_start_cmd = /kong/hello
+pluginserver_my_plugin_query_cmd = /kong/hello -dump

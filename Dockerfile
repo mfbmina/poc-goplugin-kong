@@ -1,6 +1,6 @@
 # Build Golang plugins
 
-FROM kong/go-plugin-tool:2.0.4-alpine-latest AS plugin-builder
+FROM golang:1.20 AS plugin-builder
 
 WORKDIR /builder
 
