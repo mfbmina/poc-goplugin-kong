@@ -11,12 +11,8 @@ RUN find ./go_plugins -maxdepth 1 -mindepth 1 -type d -not -path "*/.git*" | \
         cd $dir && go build -o /builds/$dir main.go  ; \
     done
 
-ENTRYPOINT [ "ash" ]
-
 # Build Kong
 FROM kong:3.4.0-ubuntu
-
-COPY ./config.yml  ./kong/
 
 COPY --from=plugin-builder ./builds/go_plugins/  ./kong/
 
