@@ -1,0 +1,3 @@
+pluginserver_names = hello
+
+pluginserver_hello_query_cmd = /kong/hello
