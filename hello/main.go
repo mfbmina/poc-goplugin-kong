@@ -1,4 +1,5 @@
 /*
+	Example copied from https://github.com/Kong/go-plugins/blob/master/go-hello.go
 	A "hello world" plugin in Go,
 	which reads a request header and sets a response header.
 */
